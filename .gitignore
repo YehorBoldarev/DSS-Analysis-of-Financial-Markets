@@ -163,5 +163,5 @@ cython_debug/
 
 *.ipynb
 
-DB/Files/
-DB/Models/
+DB/Files/*
+DB/Models/*

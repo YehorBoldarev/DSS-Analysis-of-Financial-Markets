@@ -10,8 +10,8 @@ def get_price_history(ticker: str):
     return ticker_info.history(period='max')
 
 
-def get_asset_sector(ticker_info: yf.Ticker):
-    return yf.Sector(ticker_info.info.get('sectorKey'))
+def get_sector_name(sector_key: str):
+    return yf.Sector(sector_key).name
 
 
 def get_asset_industry(ticker_info: yf.Ticker):
@@ -23,7 +23,8 @@ def get_top_industry_companies(industry_key: str):
     return industry.top_companies
 
 
-def get_industry_weight_of_sector(industry: yf.Industry):
+def get_industry_weight_of_sector(industry_key: str):
+    industry = yf.Industry(industry_key)
     sector = yf.Sector(industry.sector_key)
     return sector.industries["market weight"][industry.key]
 

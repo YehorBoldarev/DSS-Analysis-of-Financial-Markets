@@ -1,10 +1,12 @@
 class StockModel:
-    def __init__(self, ticker: str, full_name: str, sector: str, industry: str,
-                 updated_at: str, industry_market_weight: float, is_active: bool):
+    def __init__(self, ticker: str, full_name: str, sector: str, sector_name: str, industry: str,
+                 industry_name: str, updated_at: str, industry_market_weight: float, is_active: bool):
         self.ticker = ticker
         self.full_name = full_name
         self.sector = sector
+        self.sector_name = sector_name
         self.industry = industry
+        self.industry_name = industry_name
         self.updated_at = updated_at
         self.industry_market_weight = industry_market_weight
         self.is_active = is_active
