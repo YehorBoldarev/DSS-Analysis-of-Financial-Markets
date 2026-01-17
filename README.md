@@ -1,4 +1,5 @@
 # Decision Support System for Comprehensive Analysis of the Financial Market
+_**2025 Master**_
 
 **The purpose** of the work is to develop a decision support system for comprehensive
 financial market analysis. 
